@@ -59,9 +59,15 @@ h1
 h3
     font-family: 'Helvetica', sans-serif
     font-weight: $bold-text
-    font-size: 40px
+    font-size: 20px
     line-height: 130%
     color: $text-color-dark
+
+    +screen-up(sm)
+        font-size: 30px
+
+    +screen-up(lg)
+        font-size: 40px
 
 .button
     border-radius: 50px
@@ -94,6 +100,9 @@ h3
     position: relative
     height: 100vh
     overflow-y: hidden
+
+    +screen-up(lg)
+        margin: 0 0 90px
 
     & .nav
         justify-content: space-around
@@ -134,8 +143,50 @@ h3
        +screen-up(lg)
             max-width: 380px
 
+.about-us
+
+    & .content-card
+        display: flex
+        flex-direction: column
+        padding: 8% 8% 10%
+        background: $about-bg-color
+        border-radius: 50px
+
+        +screen-up(lg)
+            flex-direction: row
+            padding: 8% 8% 4% 6%
+
+        & .content
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+        & img
+            display: block
+            max-width: 420px
+            width: 100%
+            margin: 0 auto 6%
+
+            +screen-up(lg)
+                margin: 0 6% 0 0
+
+        & h3
+            margin: 0 0 4%
+
+.section-mb-medium
+    margin: 0 0 90px
+
+.section-mb-large
+    margin: 0 0 150px
+
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
+    .hero
+        margin: 0
+
+
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
     .hero
+        margin: 0
 
         &-img
             width: 70%
