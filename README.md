@@ -3,7 +3,7 @@
 1. Install [Node JS](https://nodejs.org/uk/)
 2. Clone repository: 
 ```
-git clone git@github.com:mosiichuk/frontend-base.git
+git clone git@github.com:mosiichuk/data-warehouse.git
 ```
 3. Install dependencies required for the project.
 ```
