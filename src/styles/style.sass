@@ -310,8 +310,41 @@ h4
     background: $features-card-color-4
 
 .offer
-    padding: 100px 0 0
+    padding: 50px 0 0
     border-top: 2px solid #EBE1F9
+
+    +screen-up(lg)
+        padding: 100px 0 0
+
+footer
+    padding: 0 0 30px
+
+    & .title
+        font-weight: $bold-text
+        margin: 0 0 30px 0
+
+    & .logo
+        margin: 0 0 30px 0
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: $bold-text
+        font-size: 20px
+
+        +screen-up(lg)
+            justify-content: flex-start
+
+    & .navigation li
+        margin: 0 0 20px
+
+    & .social-media a
+        display: inline-block
+
+    & .social-media a:not(:last-child)
+        margin: 0 14px 0 0
+
+    & .address-details a
+        color: $text-color-light
 
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
     .hero

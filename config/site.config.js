@@ -7,8 +7,8 @@ if (!ROOT) {
 }
 
 const config = {
-    site_name: 'Data Warehouse',
-    site_description: 'Data Warehouse',
+    site_name: 'DataWarehouse',
+    site_description: 'DataWarehouse',
     viewport: 'width=device-width,initial-scale=1',
     favicon: path.join(ROOT, './src/favicon/favicon.png'),
     dev_host: 'localhost',
