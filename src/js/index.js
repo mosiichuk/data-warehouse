@@ -3,7 +3,17 @@ import SwiperCore, {Navigation, Pagination} from 'swiper/core';
 
 SwiperCore.use([Navigation, Pagination]);
 
+document.addEventListener("scroll", () => {
+    const header = document.getElementById('header');
+    if (window.pageYOffset > 50) {
+        header.classList.add("shrink-header");
+    } else {
+        header.classList.remove("shrink-header");
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
+
     const swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 20,

@@ -7,15 +7,14 @@
     <meta name="description" content="${require('../config/site.config.js').site_description}"/>
 </head>
 <body>
-<section id="hero" class="hero">
-    <img src="./img/hero-img.png" alt="Hero image" class="hero-img">
 
+<header class="header shrink-header" id="header">
     <div class="container">
         <nav>
             <div class="row align-items-center">
-                <div class="col-12 col-sm-1 text-center text-sm-end mb-3 mb-sm-0">
+                <div class="col-12 col-sm-1 text-center text-sm-end mb-1 mb-sm-0">
                     <a href="./">
-                        <img src="./icons/logo.svg" alt="Logo">
+                        <img src="./icons/logo.svg" alt="Logo" class="logo">
                     </a>
                 </div>
 
@@ -28,7 +27,7 @@
                     </div>
                 </div>
 
-                <div class="col-6  text-end">
+                <div class="col-6 text-end">
                     <a href="#" class="button button--white d-none d-lg-inline-block">
                         <button class="d-flex align-items-center">
                             Request Demo
@@ -38,7 +37,13 @@
                 </div>
             </div>
         </nav>
+    </div>
+</header>
 
+<section id="hero" class="hero">
+    <img src="./img/hero-img.png" alt="Hero image" class="hero-img">
+
+    <div class="container">
         <div class="row content">
             <div class="col text-center text-lg-start">
                 <h1 class="title">
@@ -323,7 +328,8 @@
                             </div>
                         </div>
 
-                        <div class="d-flex justify-content-between align-items-center slider-navigation">
+                        <div
+                            class="d-flex justify-content-between align-items-center slider-navigation">
                             <div class="pagination"></div>
 
                             <div>

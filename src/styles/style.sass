@@ -135,17 +135,29 @@ h4
             transform: scale(1.1)
             color: $text-color-dark
 
-.hero
-    padding: 5vh 0 0
-    position: relative
-    height: 100vh
-    overflow-y: hidden
 
-    +screen-up(lg)
-        margin: 0 0 90px
+.header
+    position: fixed
+    width: 100%
+    top: 0
+    padding: 3vh 0 0
+    z-index: 20
+
+    &.shrink-header
+        padding: 3vh 0
+        background-color: #f6fafdea
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 
     & .nav
         justify-content: space-around
+
+    & .logo
+        width: 30px
+        height: auto
+
+        +screen-up(sm)
+            width: 49px
+            height: auto
 
     & .nav-link
         padding: 0
@@ -157,6 +169,18 @@ h4
     & .nav-link.active
         color: $text-color-dark
         font-weight: $bold-text
+
+.hero
+    padding: 20vh 0 0
+    position: relative
+    height: 100vh
+    overflow-y: hidden
+
+    +screen-up(sm)
+        padding: 10vh 0 0
+
+    +screen-up(lg)
+        margin: 0 0 90px
 
     & .content
         margin-top: 40vh
