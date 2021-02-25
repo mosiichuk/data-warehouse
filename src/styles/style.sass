@@ -263,9 +263,9 @@ h4
             margin: 0 0 45px
 
     & .subtitle
+        display: block
         width: 100%
         max-width: 584px
-        display: block
         margin: 0 auto 35px
 
         +screen-up(sm)
@@ -358,7 +358,10 @@ h4
         padding: 100px 0 0
 
 footer
-    padding: 0 0 30px
+    font-size: 14px
+
+    +screen-up(sm)
+        font-size: 16px
 
     & .title
         font-weight: $bold-text
@@ -378,6 +381,12 @@ footer
     & .navigation li
         margin: 0 0 20px
 
+    & .navigation a
+        color: $text-color-light
+
+        &:hover
+            color: $accent
+
     & .social-media a
         display: inline-block
 
@@ -386,6 +395,10 @@ footer
 
     & .address-details a
         color: $text-color-light
+
+    & .copyright-text
+        font-size: 12px
+        margin: 90px 0 0
 
 .testimonials
     overflow-x: hidden
