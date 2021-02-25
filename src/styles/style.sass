@@ -31,6 +31,17 @@
 
 html
     scroll-behavior: smooth
+    scrollbar-width: thin
+    scrollbar-color: $accent $black
+
+body::-webkit-scrollbar
+    width: 0.5rem
+
+body::-webkit-scrollbar-track
+    background: $black
+
+body::-webkit-scrollbar-thumb
+    background:  $accent
 
 body
     background-image: $background-linear
