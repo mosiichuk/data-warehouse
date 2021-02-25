@@ -346,6 +346,119 @@ footer
     & .address-details a
         color: $text-color-light
 
+.testimonials
+    overflow-x: hidden
+
+    & .content
+        border-radius: 50px
+
+        +screen-up(sm)
+            background-color: $testimonials-bg-color
+            padding: 109px 76px 90px 60px
+
+    & .title
+        color: $text-color-dark
+        margin: 0 0 30px
+
+        +screen-up(sm)
+            color: $text-color-white
+            margin: 0 0 60px
+
+        +screen-up(lg)
+            margin: 0 0 83px
+
+    & .testimonial-card
+        display: flex
+        border-radius: 50px
+        background-color: $background-white
+        border: 1px solid #9C69E2
+        box-shadow: 0 20px 0 rgba(156, 105, 226, 0.1)
+        padding: 10% 11% 8%
+
+        & img
+            height: 60px
+            width: 60px
+
+            +screen-up(sm)
+                height: 90px
+                width: 90px
+
+        & .content
+            padding: 0 0 0 15px
+            background-color: inherit
+
+            +screen-up(sm)
+                padding: 25px 0 0 30px
+
+            & .username
+                font-weight: $bold-text
+                line-height: 28.8px
+
+            & .role
+                color: #9C69E2
+                font-size: 14px
+                font-weight: $medium-text
+                margin: 0 0 19px
+
+.swiper-container
+
+    +screen-up(md)
+        overflow: visible
+
+.swiper-wrapper
+    margin: 0 0 30px
+
+    +screen-up(sm)
+        margin: 0 0 60px
+
+.swiper-slide
+    max-width: 665px
+    transition: opacity .3s ease
+
+.swiper-slide:not(.swiper-slide-active)
+    opacity: 0.9
+
+.swiper-slide.hidden
+    opacity: 0
+
+.button-next
+    width: 40px
+    height: 15px
+    background: url("../icons/next.svg") no-repeat top center / cover
+
+.button-prev
+    width: 40px
+    height: 15px
+    background: url("../icons/prev.svg") no-repeat top center / cover
+
+.button-next.disabled-button
+    background: url("../icons/next-disabled.svg") no-repeat left
+
+.button-prev.disabled-button
+    background: url("../icons/prev-disabled.svg") no-repeat right
+
+.navigation-bullet
+    margin: 0 10px 0 0
+    width: 10px
+    height: 10px
+    background-color: #F6FAFD
+    border-radius: 50%
+
+.navigation-bullet.navigation-bullet-active
+    width: 10px
+    height: 10px
+    background-color: #F063B8
+    border-radius: 50%
+
+.slider-navigation
+    background-color: $testimonials-bg-color
+    padding: 4% 6% 4%
+    border-radius: 50px
+
+    +screen-up(sm)
+        padding: 0
+        border-radius: 0
+
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)
     .hero
         margin: 0
