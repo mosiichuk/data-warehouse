@@ -69,12 +69,6 @@ h3
     +screen-up(lg)
         font-size: 40px
 
-.section-mb-medium
-    margin: 0 0 90px
-
-.section-mb-large
-    margin: 0 0 150px
-
 h4
     font-family: 'Helvetica', sans-serif
     font-weight: $regular-text
@@ -113,6 +107,7 @@ h4
     display: inline-block
 
     &:hover, &:visited
+        transition: background-color .3s ease
         color: $text-color-white
 
     & button
@@ -121,15 +116,23 @@ h4
     &--main
         background: $button-main-bg
 
+        &:hover
+            background: $button-accent-bg
+
     &--accent
         background: $button-accent-bg
+
+        &:hover
+            background: $button-main-bg
 
     &--white
         color: $text-color-dark
         background-color: $button-white-bg
         box-shadow: $button-white-box-shadow
 
-        &:hover, &:visited
+        &:hover
+            transition: all .3s ease
+            transform: scale(1.1)
             color: $text-color-dark
 
 .hero
@@ -147,6 +150,9 @@ h4
     & .nav-link
         padding: 0
         color: $text-color-light
+
+        &:hover
+            color: $text-color-accent
 
     & .nav-link.active
         color: $text-color-dark
@@ -447,7 +453,7 @@ footer
 .navigation-bullet.navigation-bullet-active
     width: 10px
     height: 10px
-    background-color: #F063B8
+    background-color: $accent
     border-radius: 50%
 
 .slider-navigation
